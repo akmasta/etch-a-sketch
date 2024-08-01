@@ -1,5 +1,7 @@
 const gridContainer = document.getElementById("container");
-const gridSize = 16;
+const gridSize = 5;
+
+gridContainer.innerHTML = "";
 
 for (let i = 0; i < gridSize; i++) {
     for (let j = 0; j < gridSize; j++) {
@@ -8,3 +10,5 @@ for (let i = 0; i < gridSize; i++) {
         gridContainer.appendChild(squareDiv);
     };
 };
+
+document.documentElement.style.setProperty('--grid-size', gridSize);
