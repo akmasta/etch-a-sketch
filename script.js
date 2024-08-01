@@ -1,5 +1,5 @@
 const gridContainer = document.getElementById("container");
-const gridSize = 5;
+const gridSize = 64;
 
 gridContainer.innerHTML = "";
 
@@ -12,3 +12,13 @@ for (let i = 0; i < gridSize; i++) {
 };
 
 document.documentElement.style.setProperty('--grid-size', gridSize);
+
+// Hovering
+
+const square = document.querySelectorAll(".square");
+
+square.forEach(square => {
+    square.addEventListener("mousemove", () => {
+        square.classList.add("touched")
+    });
+});
