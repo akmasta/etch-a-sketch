@@ -16,3 +16,11 @@
 .touched {
     background-color: black;
 }
+
+button {
+    margin: 20px;
+    padding: 20px;
+    background-color: red;
+    color: white;
+    font-weight: 700;
+}
