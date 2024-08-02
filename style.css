@@ -13,9 +13,6 @@
     box-sizing: border-box;
 }
 
-.touched {
-    background-color: black;
-}
 
 button {
     margin: 20px;
